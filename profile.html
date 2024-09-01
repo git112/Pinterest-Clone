@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="pin.css">
+</head>
+<body>
+
+<div class="profile-content">
+    <div class="profile-header">
+        <div class="profile-icon"></div>
+        <h2 class="profile-name">23IT021</h2>
+        <p class="profile-username">@23it021</p>
+        <div class="profile-actions">
+            <button class="profile-button">Share</button>
+            <button class="profile-button">Edit profile</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    const userEmail = localStorage.getItem('userEmail');
+    if (userEmail) {
+        document.getElementById('userEmailDisplay').textContent = `Email: ${userEmail}`;
+    }
+</script>
+
+</body>
+</html>
+

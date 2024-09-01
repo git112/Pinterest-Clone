@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINSPIRE</title>
+    <link rel="stylesheet" href="pin.css">
+    <link rel="icon" href="./images/download.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="header-container">
+        <div class="logo">
+            <a href="#home">
+                <img src="./images/download.png" alt="Logo" class="logo-image">
+                <div class="name">
+                    PINSPIRE
+                </div>
+            </a>
+        </div>
+
+
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Create</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search here for dogs..." id="search">
+            <button class="search-button" onclick="performSearch()">
+                <img src="./images/search.png" alt="Search Icon" class="search-icon">
+            </button>
+        </div>
+        <div class="notification-container">
+            <button class="notification-button" onclick="toggleNotification()">
+                <img src="./images/bell.png" alt="Notifications" class="notification-icon">
+            </button>
+            
+            <div class="notification-dropdown" id="notificationDropdown">
+                <div class="notification-header">Updates</div>
+                <div class="notification-content">
+                    <img src="./images/update.png" alt="No Updates" class="no-updates-image">
+                    <h3>Nothing to see here (yet)!</h3>
+                    <p>Try exploring your home feed, creating a board, or following someone with ideas that inspire you.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="profile-icon">
+            <a href="./profile.html">
+                <img src="./images/profile.png" alt="Profile Icon" height="45px" width="45px">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="pin-card">
+                
+                    <img src="./images/15.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/2.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+
+            </div>
+            <div class="pin-card">
+               
+                    <img src="./images/3.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/1213.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/11.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/8.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="pin-card">
+                
+                    <img src="./images/23.jpg" alt="Image 1" class="pin-image" width="100%"  >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+               
+                    <img src="./images/22.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/10.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                    <img src="./images/9.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                    <img src="./images/1.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                    <img src="./images/6.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="pin-card">
+                
+                    <img src="./images/7.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                    <img src="./images/21.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/20.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/12.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/24.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/17.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="column">
+            <div class="pin-card">
+                
+                    <img src="./images/4.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/14.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/5.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+               
+                    <img src="./images/16.jpg" alt="Image 1" class="pin-image" width="100%" >
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/18.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+            <div class="pin-card">
+                
+                    <img src="./images/19.jpg" alt="Image 1" class="pin-image" width="100%">
+                
+                <div class="pin-overlay">
+                    <button class="save-button" onclick="savePin()">Save</button>
+                    <button class="hide-button" onclick="hidePin()">Hide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+               <h5>PINSPIRE</h5>
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-login">
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
